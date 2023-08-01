@@ -1,16 +1,5 @@
-import { Link, Outlet } from "react-router-dom";
-
-import Menu from "@/components/Menu";
+import CounterApp from "@/components/CounterApp";
 
 export default function Home() {
-  return (
-    <div>
-      <Menu />
-      <h1>HOME</h1>
-
-      <div>
-        <Outlet />
-      </div>
-    </div>
-  );
+  return <CounterApp value={5} />;
 }
